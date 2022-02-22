@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-
 /* CSS Resets*/
 
 html,
@@ -137,7 +136,6 @@ table {
 
 body {
   font-family: "Poppins";
-  
 }
 
 :root {
@@ -178,12 +176,11 @@ p {
 
 /*NAVAGATION STYLES*/
 
-
 .mobile-phone {
   display: none;
 }
 
-.calltext { 
+.calltext {
   display: flex;
   flex-direction: column;
 }
@@ -198,9 +195,9 @@ p {
 }
 
 .sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -211,7 +208,6 @@ nav ul {
   margin-left: auto;
   max-width: 90em;
   padding-right: 30px;
-  
 }
 
 .protect {
@@ -238,26 +234,25 @@ a:link {
 
 @media (max-width: 830px) {
   .container-nav {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   .logo {
-    float:left;
+    float: left;
   }
 
   nav li:nth-child(2) {
     display: none;
   }
 
-  nav
-   li:nth-child(3) {
+  nav li:nth-child(3) {
     display: flex;
     float: right;
     margin-top: -43px;
   }
 
   header ul {
-    padding: .5rem;
+    padding: 0.5rem;
     margin-bottom: 35px;
   }
 }
@@ -327,7 +322,6 @@ a:active {
     align-items: center;
     padding-right: 0px;
     padding-left: 0px;
-   
   }
   .footer > div {
     text-align: center;
@@ -348,7 +342,6 @@ a:active {
   .footer div:nth-child(3) div:nth-child(1) {
     margin-bottom: 1.3rem;
   }
-  
 }
 
 /* INDEX / HOME PAGE STYLES */
@@ -361,7 +354,7 @@ form {
   margin-right: auto;
   margin-left: auto;
   max-width: 40em;
- 
+
   margin-top: 40px;
 }
 
@@ -501,7 +494,7 @@ form {
   outline: none;
   white-space: normal;
   margin-bottom: 4rem;
-  border-radius: 100px
+  border-radius: 100px;
 }
 
 .button:hover {
@@ -534,7 +527,7 @@ select {
   .phone {
     display: flex;
   }
-  
+
   .flex {
     display: flex;
     align-items: center;
@@ -542,8 +535,6 @@ select {
     margin-right: 0px;
     margin-left: 0px;
   }
-
-
 
   .title-mobile {
     padding: 25px;
@@ -562,7 +553,7 @@ select {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   h1 {
     font-size: 26px;
   }
@@ -576,10 +567,9 @@ select {
 }
 
 @media (max-width: 760px) {
-.container {
-  margin-top: 65px;
-
-}
+  .container {
+    margin-top: 65px;
+  }
 }
 
 /* QUOTE PAGE STYLES */
@@ -716,19 +706,18 @@ select {
   white-space: normal;
 }
 
-
 /*ACCORION FAQ & PRIVACY POLICY*/
 
-.accordion{
+.accordion {
   width: 100%;
 }
 
-.accordion-tab > .accordion-toggle{
+.accordion-tab > .accordion-toggle {
   position: absolute;
   display: none;
 }
 
-.accordion-tab > label{
+.accordion-tab > label {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -739,27 +728,27 @@ select {
   cursor: pointer;
 }
 
-.accordion-tab > .accordion-content{
+.accordion-tab > .accordion-content {
   max-height: 0;
-  transition: all .40s;
-  overflow: hidden; 
+  transition: all 0.4s;
+  overflow: hidden;
 }
 
 .accordion-tab > label:after {
-  content: '\f078';
+  content: "\f078";
   position: absolute;
   top: 13px;
   right: 20px;
   font-family: fontawesome;
   transform: rotate(90deg);
-  transition:transform .30s ;  
+  transition: transform 0.3s;
 }
 
-.accordion-tab > .accordion-toggle:checked ~ label:after{
+.accordion-tab > .accordion-toggle:checked ~ label:after {
   transform: rotate(0deg);
 }
 
-.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content {
   max-height: 100vh;
   overflow: auto;
 }
@@ -769,7 +758,7 @@ select {
   font-size: 15px;
   line-height: 1.5;
   border-bottom: 1px solid #ddd;
-  }
+}
 
 .faq {
   margin-top: 1rem;
@@ -781,7 +770,6 @@ select {
 }
 
 @media (max-width: 968px) {
-  
   .wrapper {
     margin-top: 20px;
   }
@@ -805,7 +793,6 @@ select {
   }
   .rightdiv {
     width: 100%;
-   
   }
   .bottom-card {
     justify-content: space-around;
@@ -832,23 +819,20 @@ select {
     align-items: center;
     margin-top: 2rem;
     text-align: center;
-    
   }
-  
 }
 
 @media (max-width: 568px) {
-    .leftdiv {
+  .leftdiv {
     width: 100%;
     margin-bottom: 20px;
     padding-right: 0;
     align-items: center;
-
   }
   .quote-info {
     display: none;
   }
-  
+
   .rightdiv {
     width: 100%;
     margin-right: 0;
@@ -873,7 +857,7 @@ select {
   .bottom-card {
     justify-content: space-between;
   }
-  
+
   .price {
     font-size: 16px !important;
     font-weight: bold;
@@ -930,7 +914,6 @@ select {
 .phone div,
 .address div,
 .city div,
-
 .zip div {
   padding-top: 0.75rem;
   padding-right: 0.75rem;
@@ -954,8 +937,8 @@ select {
   padding-left: 1.5rem;
 }
 
-input[type='radio'] { 
-  transform: scale(2); 
+input[type="radio"] {
+  transform: scale(2);
   display: inline;
   margin: 0 10px 0 10px;
 }
@@ -992,7 +975,7 @@ button {
   outline: none;
   white-space: normal;
   margin-bottom: 8rem;
-  border-radius: 100px
+  border-radius: 100px;
 }
 
 button:hover {
@@ -1073,7 +1056,6 @@ input.invalid {
   .tab {
     margin-top: -40px;
   }
-  
 }
 
 /* DASHBOARD PAGE STYLES */
@@ -1127,7 +1109,7 @@ input.invalid {
   border: 1px solid #ddd;
 }
 
-.dashboard-progress1{
+.dashboard-progress1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1157,7 +1139,6 @@ input.invalid {
   border: 2px solid #ddd;
   border-radius: 2rem;
   padding: 16px;
-  
 }
 
 .confirmation-plan {
@@ -1232,18 +1213,16 @@ input.invalid {
 }
 
 @media (max-width: 450px) {
-
-.company {
-  display: none;
+  .company {
+    display: none;
   }
 
-.confirmation-next ul {
-  flex-direction: column;
-}
+  .confirmation-next ul {
+    flex-direction: column;
+  }
 }
 
 /*NAVIGATION DASHBOARD STYLES*/
-
 
 .user-mobile {
   display: none;
@@ -1299,7 +1278,6 @@ ul.nav-dash li a {
 
 /*NAV CONFIRMATION STYLES*/
 
-
 ul li a {
   color: black;
   font-weight: 700;
@@ -1309,36 +1287,35 @@ ul li a {
   .menu {
     display: block;
     float: right;
-    margin-right:  1rem;
+    margin-right: 1rem;
   }
 
   .user-mobile {
     float: right;
     background: var(--primary-color);
-    width: 50px; 
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex; /* or inline-flex */
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     margin-right: 1rem;
-    }
+  }
 
- span.letter {
-   color: #fff;
- }
+  span.letter {
+    color: #fff;
+  }
 
-.phone-view { 
-  display: block;
-}
+  .phone-view {
+    display: block;
+  }
 
   .mobile {
-     background-color: #fff;
+    background-color: #fff;
     position: relative;
     width: 100%;
     margin-top: 2rem;
     height: 100vh;
-    
   }
 
   .mobile a {
@@ -1391,7 +1368,6 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
