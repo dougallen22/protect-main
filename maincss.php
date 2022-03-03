@@ -8,4 +8,5 @@
   <link rel="stylesheet" href="user/dist/css/skins/_all-skins.min.css">
 	<!-- Main Style Css -->
 
-    <link href="user/css/bootstrap-imageupload.css" rel="stylesheet">
+  <link href="user/css/bootstrap-imageupload.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.loadingModal.css">

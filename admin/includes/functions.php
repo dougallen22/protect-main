@@ -1,8 +1,8 @@
 <?php
 //connection
 function con(){
-$con = mysqli_connect("localhost","root","","protect_mutual") or die;
-    return $con;
+	$con = mysqli_connect("localhost","protect_mutual","protect_mutual","protect_mutual") or die;
+	return $con;
 }
 
 //verify admin credentials

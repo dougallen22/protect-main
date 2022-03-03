@@ -1,6 +1,12 @@
 
 <?php
 if (isset($_POST['age'])) {
+    session_start();
+    $email='';
+    if(isset($_SESSION['emailaddress'])){
+        $email=$_SESSION['emailaddress'];
+    }
+    
     include 'admin/includes/functions.php';
     $age = $_POST['age'];
     $gender = $_POST['gender'];
@@ -174,6 +180,7 @@ if (isset($_POST['age'])) {
                             $img['company_logo'] .
                             '&year=' .
                             $row['year'] .
+                            '&email='.$email.
                             '"><button class= "continue">CONTINUE</button></a></div>   
                                 </div></div>';
                     }

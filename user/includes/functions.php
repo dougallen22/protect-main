@@ -2,7 +2,7 @@
 //connection
 function con()
 {
-	$con = mysqli_connect("localhost", "root", "", "protect_mutual") or die;
+	$con = mysqli_connect("localhost","protect_mutual","protect_mutual","protect_mutual") or die;
 	return $con;
 }
 

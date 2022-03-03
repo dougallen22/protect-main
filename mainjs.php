@@ -42,9 +42,9 @@
 <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="js/jquery.loadingModal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){ 
 
@@ -239,5 +239,39 @@ document.querySelector('#display2').style.background='none';
                                     Document upload finished
 ///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-				   
-                                         </script>
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                    Loader Starts
+///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    function showModal() {
+        $('body').loadingModal({text: 'Starting Query'});
+
+        var delay = function(ms){ return new Promise(function(r) { setTimeout(r, ms) }) };
+        var time = 1500;
+
+        delay(time)
+                .then(function() { $('body').loadingModal('text', 'Getting Results').loadingModal('animation', 'rotatingPlane').loadingModal('backgroundColor', 'red'); return delay(time);})
+
+                .then(function() { $('body').loadingModal('text', 'Choosing Best for you').loadingModal('animation', 'wave'); return delay(time);})
+
+                .then(function() { $('body').loadingModal('text', 'Sorting Out Results').loadingModal('animation', 'spinner'); return delay(time);})
+
+                .then(function() { $('body').loadingModal('animation', 'chasingDots').loadingModal('backgroundColor', 'blue'); return delay(time);})
+
+                .then(function() { $('body').loadingModal('text', 'Finalizing Results').loadingModal('backgroundColor', 'green').loadingModal('animation', 'threeBounce'); return delay(time);})
+
+
+                .then(function() { $('body').loadingModal('color', 'black').loadingModal('text', 'Done').loadingModal('backgroundColor', 'green');  return delay(time); } )
+
+                .then(function() { $('body').loadingModal('destroy') ;} );
+                
+    }
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                    Loader Ends
+///////////////////////////////////////////////////////////////////////////////////////////////////////*/			   
+</script>
+

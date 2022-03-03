@@ -44,6 +44,13 @@ include('user/check_cookie.php');
                     header('location:index.php');
                 }
             }
+            $pemail='';
+            if($_COOKIE['pemail']!=''){
+                $pemail=$_COOKIE['pemail'];
+            }
+            else{
+                $pemail=$_GET['email'];
+            }
             ?>
 
             <!-- ////////////////////////////////////////
@@ -97,7 +104,7 @@ include('user/check_cookie.php');
                         <h3>Email</h3>
                     </div>
                     <input type="email" id="email" oninput="this.className = ''" name="email"
-                        value="<?php echo @$_COOKIE['pemail']; ?>" placeholder="Enter Your Email">
+                        value="<?php echo $pemail; ?>" placeholder="Enter Your Email">
                 </div>
 
                 <div class="phone">
